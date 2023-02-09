@@ -1,2 +1,3 @@
 .envrc
 build/build.auto.pkrvars.hcl
+build/venv
