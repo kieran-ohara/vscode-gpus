@@ -1,0 +1,5 @@
+---
+dependencies:
+  - role: aws
+  - role: git
+  - role: python

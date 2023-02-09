@@ -1,0 +1,7 @@
+---
+dependencies:
+  - role: dvc
+  - role: git
+  - role: miniconda
+  - role: python
+  - role: vscode

@@ -1,0 +1,9 @@
+---
+- hosts: rockylinux8
+  roles:
+    - data-science
+    - gpu
+    - sysadmin
+    - cleanup
+  vars:
+    vscode_server_name: mlenv

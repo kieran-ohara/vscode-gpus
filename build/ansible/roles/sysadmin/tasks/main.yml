@@ -1,0 +1,29 @@
+---
+- name: Install Utils
+  package:
+    name:
+      - htop
+      - ncdu
+      - pciutils
+      - tmux
+      - tree
+    state: latest
+  become: true
+  tags:
+    - sysadmin
+
+- name: Get Alacritty Terminfo
+  get_url:
+    url: https://raw.githubusercontent.com/alacritty/alacritty/master/extra/alacritty.info
+    dest: /tmp
+  tags:
+    - user
+
+- name: Install Alacritty Terminfo
+  command: tic -xe alacritty,alacritty-direct alacritty.info
+  args:
+    chdir: /tmp
+    creates: /usr/share/terminfo/a/alacritty
+  become: true
+  tags:
+    - sysadmin
