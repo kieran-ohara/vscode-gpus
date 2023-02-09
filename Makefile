@@ -5,4 +5,7 @@ vm/venv: requirements.txt
 vm: vm/venv
 	cd $@ && packer build .
 
-.PHONY: vm
+deployment:
+	cd $@ && terraform apply
+
+.PHONY: vm deployment

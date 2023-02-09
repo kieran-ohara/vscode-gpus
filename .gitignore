@@ -1,3 +1,7 @@
 .envrc
 vm/build.auto.pkrvars.hcl
 vm/venv
+deployment/.terraform
+deployment/.terraform.*
+deployment/run.auto.tfvars
+deployment/terraform.tfstate*

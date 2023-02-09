@@ -1,0 +1,4 @@
+#cloud-config
+mounts:
+  - [sdb, /home/vscode/src]
+mount_default_fields: [None, None, "xfs", "defaults", "0", "2"]
