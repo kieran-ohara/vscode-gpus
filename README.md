@@ -20,5 +20,12 @@ creating a VM on Google Cloud Platform that you can connect to. The VM itself
 has the necessary software pre-installed for you to focus on completing
 Data Science tasks such as [EDA][eda] and training models.
 
+### How Do I Use It?
+
+1. [Build the VM][build-vm].
+2. Run the VM.
+3. Access the instance via https://vscode.dev/tunnel/mlenv.
+
 [vscode-remote-tunnel]: https://code.visualstudio.com/docs/remote/tunnels
 [eda]: https://en.wikipedia.org/wiki/Exploratory_data_analysis
+[build-vm]: ./docs/how-to/build-the-vm.md
