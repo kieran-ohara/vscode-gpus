@@ -2,6 +2,7 @@
 dependencies:
   - role: dvc
   - role: git
+  - role: kieranohara.podman
   - role: miniconda
   - role: python
   - role: vscode

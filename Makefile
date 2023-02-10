@@ -11,4 +11,7 @@ deployment:
 clean:
 	cd deployment && terraform destroy
 
-.PHONY: vm deployment clean
+ansible-deps:
+	ansible-galaxy install -f -r vm/ansible/requirements.yml
+
+.PHONY: vm deployment clean ansible-deps
