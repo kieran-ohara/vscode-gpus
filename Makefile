@@ -1,5 +1,5 @@
 vm/venv: requirements.txt
-	python -m venv $@
+	python3 -m venv $@
 	$@/bin/pip install -r $<
 
 vm: vm/venv
