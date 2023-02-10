@@ -6,4 +6,4 @@
     - sysadmin
     - cleanup
   vars:
-    vscode_server_name: mlenv
+    vscode_server_name: vscode-gpus

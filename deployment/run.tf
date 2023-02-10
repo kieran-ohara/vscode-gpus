@@ -35,7 +35,7 @@ variable "disk_size_gb" {
 }
 
 resource "google_compute_disk" "default" {
-  name                      = "mlenv-src"
+  name                      = "vscode-gpus-src"
   type                      = "pd-ssd"
   physical_block_size_bytes = 4096
   size                      = var.disk_size_gb
@@ -48,11 +48,11 @@ resource "google_compute_attached_disk" "default" {
 }
 
 resource "google_compute_address" "static" {
-  name = "mlenv-ipv4-address"
+  name = "vscode-gpus-ipv4-address"
 }
 
 resource "google_compute_instance" "default" {
-  name         = "mlenv-instance"
+  name         = "vscode-gpus-instance"
   machine_type = var.gcp_machine_type
 
   boot_disk {

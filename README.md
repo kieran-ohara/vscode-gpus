@@ -1,4 +1,4 @@
-# mlenv
+# vscode-gpus
 
 A personal `VSCode` server hosted in the Cloud, backed with optional GPUs.
 
@@ -8,7 +8,7 @@ You are a data scientist that wants to train/fine tune a complex Neural
 Network. Your hardware is not powerful enough and whilst you've heard great
 things about GPUs, there's simply no way you can cash out on a monster GPU.
 
-`mlenv` solves this issue by running an instance of the popular VSCode IDE on
+`vscode-gpus` solves this issue by running an instance of the popular VSCode IDE on
 VMs hosted in the cloud. Now you have the power to attach and unattach GPUs at
 will for a fraction of the cost when compared to buying one outright.
 
@@ -24,7 +24,7 @@ Data Science tasks such as [EDA][eda] and training models.
 
 1. [Build the VM][build-vm].
 2. [Run the VM][run-vm].
-3. Access the instance via https://vscode.dev/tunnel/mlenv.
+3. Access the instance via https://vscode.dev/tunnel/vscode-gpus.
 4. When you are finished with the instance **and your source code is pushed**,
    run `$ make clean` to destroy VSCode and stop getting billed.
 
