@@ -42,7 +42,7 @@ source "googlecompute" "rockylinux8" {
   ssh_username        = var.gcp_ssh_username
   zone                = var.gcp_zone
   machine_type        = var.gcp_machine_type
-  disk_size           = 44
+  disk_size           = 20
 }
 
 build {
