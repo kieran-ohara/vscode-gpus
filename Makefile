@@ -8,4 +8,7 @@ vm: vm/venv
 deployment:
 	cd $@ && terraform apply
 
-.PHONY: vm deployment
+clean:
+	cd deployment && terraform destroy
+
+.PHONY: vm deployment clean

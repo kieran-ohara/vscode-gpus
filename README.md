@@ -25,6 +25,8 @@ Data Science tasks such as [EDA][eda] and training models.
 1. [Build the VM][build-vm].
 2. [Run the VM][run-vm].
 3. Access the instance via https://vscode.dev/tunnel/mlenv.
+4. When you are finished with the instance **and your source code is pushed**,
+   run `$ make clean` to destroy VSCode and stop getting billed.
 
 [vscode-remote-tunnel]: https://code.visualstudio.com/docs/remote/tunnels
 [eda]: https://en.wikipedia.org/wiki/Exploratory_data_analysis
