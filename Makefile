@@ -2,7 +2,7 @@ vm/venv: requirements.txt
 	python3 -m venv $@
 	$@/bin/pip install -r $<
 
-vm: vm/venv
+vm: vm/venv vm/ansible/collections
 	cd $@ && packer build .
 
 deployment:
@@ -11,7 +11,8 @@ deployment:
 clean:
 	cd deployment && terraform destroy
 
-ansible-deps:
-	ansible-galaxy install -f -r vm/ansible/requirements.yml
+vm/ansible/collections: vm/ansible/requirements.yml vm/venv
+	vm/venv/bin/ansible-galaxy collection install -f --collections-path $@ -r $<
+	touch $@
 
-.PHONY: vm deployment clean ansible-deps
+.PHONY: vm deployment clean

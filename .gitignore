@@ -1,4 +1,5 @@
 .envrc
+vm/ansible/collections
 vm/build.auto.pkrvars.hcl
 vm/venv
 deployment/.terraform

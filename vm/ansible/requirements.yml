@@ -1,4 +1,4 @@
-- src: https://github.com/kieran-ohara/common-ansible-roles
-  version: main
-  path: podman
-  name: kieranohara.podman
+collections:
+  - name: https://github.com/kieran-ohara/common-ansible-roles
+    version: main
+    type: git

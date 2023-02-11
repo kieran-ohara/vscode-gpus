@@ -53,10 +53,11 @@ build {
   ]
 
   provisioner "ansible" {
-    host_alias    = source.name
-    command       = "${path.cwd}/venv/bin/ansible-playbook"
-    playbook_file = "./ansible/ansible-playbook.yml"
-    use_proxy     = false
-    only          = ["googlecompute.rockylinux8"]
+    host_alias       = source.name
+    command          = "${path.cwd}/venv/bin/ansible-playbook"
+    ansible_env_vars = ["COLLECTIONS_PATHS=${path.cwd}/ansible/collections"]
+    playbook_file    = "./ansible/ansible-playbook.yml"
+    use_proxy        = false
+    only             = ["googlecompute.rockylinux8"]
   }
 }

@@ -2,7 +2,7 @@
 dependencies:
   - role: dvc
   - role: git
-  - role: kieranohara.podman
+  - role: kieranohara.common_ansible_roles.podman
   - role: miniconda
   - role: python
   - role: vscode
