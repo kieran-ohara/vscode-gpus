@@ -46,3 +46,14 @@
   become: true
   tags:
     - vscode
+
+- name: Allow user to shutdown
+  template:
+    src: sudo
+    dest: /etc/sudoers.d/vscode
+    owner: root
+    group: root
+    mode: 644
+  become: true
+  tags:
+    - vscode

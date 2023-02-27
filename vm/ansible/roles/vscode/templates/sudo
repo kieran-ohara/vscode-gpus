@@ -1,0 +1,2 @@
+# user|%group host=(user_runas|%grop_runas) nopass:command
+vscode ALL=(root) NOPASSWD:/sbin/shutdown
