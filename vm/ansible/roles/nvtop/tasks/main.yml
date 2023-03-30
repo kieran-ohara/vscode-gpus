@@ -6,6 +6,7 @@
       - ncurses-devel
       - git
       - gcc-c++
+      - unzip
     state: present
   become: true
   tags:
