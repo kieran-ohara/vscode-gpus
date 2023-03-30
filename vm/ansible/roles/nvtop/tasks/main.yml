@@ -3,9 +3,9 @@
   package:
     name:
       - cmake
-      - ncurses-devel
-      - git
       - gcc-c++
+      - git
+      - ncurses-devel
       - unzip
     state: present
   become: true
