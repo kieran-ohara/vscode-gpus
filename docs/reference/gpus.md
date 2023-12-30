@@ -16,7 +16,7 @@ Comparing the different cloud providers re. cost.
 ## GCP
 
 | Class | region | Price ($ ph) | GPU | GPU Memory (Gb) | Memory (Gb) | Recommended | it/s |
-| -------------- | ------------- | ------------ | --- | --------------- | ----------- | ------------------- | |
+| -------------- | ------------- | ------------ | --- | --------------- | ----------- | ------------------- | --- |
 | n1-standard-4 | us-central1 | 0.38 | T4 | 16 | 15 | | |
 | n1-standard-4 | europe-west-4 | 0.39 | T4 | 16 | 15 | Check vscode is OK /run exp in terminal not vscode? | |
 | n1-standard-8 | europe-west-4 | 0.54 | T4 | 16 | 30 | If vscode is not OK | |

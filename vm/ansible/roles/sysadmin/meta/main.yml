@@ -1,3 +1,4 @@
 ---
 dependencies:
   - role: cloud-init
+  - role: kieranohara.common_ansible_roles.sysadmin

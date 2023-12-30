@@ -4,6 +4,6 @@
     - data-science
     - gpu
     - sysadmin
-    - cleanup
+    - kieranohara.common_ansible_roles.cleanup
   vars:
     vscode_server_name: vscode-gpus
