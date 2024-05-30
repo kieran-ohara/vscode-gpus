@@ -1,9 +1,10 @@
 ---
 - hosts: rockylinux8
   roles:
+    - cloud-init
     - data-science
     - gpu
-    - sysadmin
+    - kieranohara.common_ansible_roles.sys_admin
     - kieranohara.common_ansible_roles.cleanup
   vars:
     vscode_server_name: vscode-gpus
