@@ -40,6 +40,7 @@ source "googlecompute" "rockylinux8" {
   source_image_family = var.gcp_build_image
   image_name          = "vscode-gpus-${local.truncated_sha}-{{timestamp}}"
   ssh_username        = var.gcp_ssh_username
+  use_os_login         = true
   zone                = var.gcp_zone
   machine_type        = var.gcp_machine_type
   disk_size           = 20
