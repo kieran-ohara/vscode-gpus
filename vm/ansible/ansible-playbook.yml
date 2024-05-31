@@ -2,6 +2,7 @@
 - hosts: rockylinux8
   roles:
     - cloud-init
+    - developer
     - data-science
     - gpu
     - kieranohara.common_ansible_roles.sys_admin

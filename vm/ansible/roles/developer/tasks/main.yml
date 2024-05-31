@@ -1,0 +1,10 @@
+---
+- name: Allow VSCode user access to Docker
+  user:
+    name: vscode
+    append: true
+    groups:
+      - docker
+  become: true
+  tags:
+    - developer

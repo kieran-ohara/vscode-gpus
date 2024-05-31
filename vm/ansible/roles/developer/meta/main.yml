@@ -1,0 +1,6 @@
+---
+dependencies:
+  - role: git
+  - role: kieranohara.common_ansible_roles.docker
+  - role: python
+  - role: vscode
