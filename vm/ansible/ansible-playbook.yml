@@ -4,7 +4,7 @@
     - cloud-init
     - developer
     - data-science
-    - gpu
+    - kieranohara.common_ansible_roles.gpu_dev
     - kieranohara.common_ansible_roles.sys_admin
     - kieranohara.common_ansible_roles.clean_up
   vars:
